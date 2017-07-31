@@ -46,10 +46,10 @@
   ],
   "license": "BSD-3-Clause",
   "main": "dist/index.js",
-  "name": "babel-plugin-react-css-modules",
+  "name": "babel-plugin-react-css-modules-avion",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gajus/babel-plugin-react-css-modules"
+    "url": "https://github.com/tjramage/babel-plugin-react-css-modules-avion"
   },
   "scripts": {
     "build-helper": "mkdir -p ./dist/browser && NODE_ENV=production babel ./src/getClassName.js --out-file ./dist/browser/getClassName.js --source-maps --no-babelrc --plugins transform-es2015-modules-commonjs,transform-flow-strip-types --presets es2015",
