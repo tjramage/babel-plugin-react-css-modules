@@ -111,8 +111,8 @@ export default (cssSourceFilePath: string, options: OptionsType): StyleModuleMap
 
   const extraPlugins = getExtraPlugins(filetypeOptions);
 
-  const plugins = [
-    ...extraPlugins,
+  const plugins = [].concat(
+    extraPlugins,
     Values,
     LocalByDefault,
     ExtractImports,
@@ -122,7 +122,7 @@ export default (cssSourceFilePath: string, options: OptionsType): StyleModuleMap
     new Parser({
       fetch
     })
-  ];
+  );
 
   runner = postcss(plugins);
 
